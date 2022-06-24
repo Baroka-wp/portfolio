@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  padding: 0 16px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 1px -3px 25px rgba(0, 0, 0, 0.25);
+  background: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer a {
+  font-size: 30px;
+  color: purple;
+}
+
+nav ul li a {
+  color: black;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.hero_hello {
+  background: yellow;
+  padding: 5px;
+  width: 55px;
+  border-radius: 17px 0 4px 1px;
+}
+
+.hero_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-width: 50%;
+}
+
+.profilImage {
+  width: 40%;
+}
+
+.hero_name {
+  font-family: 'Abril Fatface', cursive;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 200;
+  color: purple;
+}
+
+.hero_action {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.hero_action button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff0 0%, #d4d07b 100%);
+  border: 3px solid #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.hero_about {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.hero_about ul {
+  padding-left: 25px;
+  margin: 10px 0;
+}
+
+.hero_about ul li {
+  list-style-type: circle;
+}
+
+.experience {
+  background: url(./images/Vector\ 4.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 90vh;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp_card {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.exp_img {
+  width: 75px;
+  height: 75px;
+}
+
+.exp_details {
+  width: 70%;
+}
+
+.exp_details h3 {
+  margin-bottom: 10px;
+}
+
+.exp_details ul {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.exp_details ul li {
+  list-style-type: disc;
+}
+
+.achivement {
+  background: url(./images/Vector\ 5.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+  margin-top: 80px;
+  min-height: 80vh;
+}
+
+.achivement .achv_card {
+  width: 45%;
+}
+
+.achv_card h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: purple;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  min-height: 90vh;
+  width: 80%;
+}
+
+.project_card {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d4d07b;
+}
+
+.project_detail {
+  padding: 0 20px;
+}
+
+.project_detail h3 {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: rebeccapurple;
+}
+
+.project_links {
+  padding: 10px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.contact {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contact p a {
+  font-size: 20px;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: auto 0;
+  border-top: 1px solid purple;
 }
