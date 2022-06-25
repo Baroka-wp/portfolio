@@ -15,11 +15,11 @@ const Contact = () => (
   <div className="contact">
     <p>
       <AiOutlineMail />
-      <a href="mailto:birotori@gmail.com">birotori@gmail.com</a>
+      <a href="mailto:birotori@gmail.com">&nbsp;birotori@gmail.com</a>
     </p>
     <p>
       <FaWhatsappSquare />
-      +229 67 15 39 74
+      &nbsp;+229 67 15 39 74
     </p>
     <p>Time zone : UTC + 1</p>
     <div className="contact_icone">

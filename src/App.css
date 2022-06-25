@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Abril', sans-serif;
 }
 
 body {
@@ -36,6 +36,10 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.navBar button {
+  display: none;
 }
 
 footer a {
@@ -194,7 +198,7 @@ nav ul li a {
 }
 
 .project_card {
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   border: 1px solid #d4d07b;
@@ -240,4 +244,82 @@ footer {
   gap: 20px;
   margin: auto 0;
   border-top: 1px solid purple;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar button {
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 15px;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+    background: none;
+    border: none;
+    color: purple;
+  }
+
+  nav ul {
+    background: white;
+    border-top: 1px solid purple;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 10px 20px;
+  }
+
+  .menuNav {
+    display: none;
+  }
+
+  .menuNav.showMenu {
+    display: flex;
+  }
+
+  .project_card {
+    width: 90%;
+  }
+
+  .hero {
+    margin: 100px 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .profilImage {
+    width: 60%;
+  }
+
+  .hero_detail {
+    min-width: 80%;
+  }
+
+  .experience {
+    margin: auto;
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  footer {
+    gap: 10px;
+  }
+
+  footer a {
+    font-size: 18px;
+  }
 }
